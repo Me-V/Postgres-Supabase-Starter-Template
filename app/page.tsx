@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 type FormData = {
@@ -72,6 +73,13 @@ export default function Home() {
           Submit
         </button>
       </form>
+
+      <p className="text-3xl text-white font-bold mt-5">For the Tutorial</p>
+      <Link href="https://drive.google.com/file/d/16J_rKobjJsYGGR4oQ2pmcukCT89GVqly/view?usp=drive_link">
+        <button className="p-3 mt-2 border border-white rounded-lg">
+          Download PDF
+        </button>
+      </Link>
     </div>
   );
 }
